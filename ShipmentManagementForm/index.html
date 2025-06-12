@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipment Management Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Shipment Management Form</h2>
+        <form id="shipmentForm">
+            <label>Shipment No (Primary Key):</label>
+            <input type="text" id="shipmentNo" required><br>
+
+            <label>Description:</label>
+            <input type="text" id="description" required><br>
+
+            <label>Source:</label>
+            <input type="text" id="source" required><br>
+
+            <label>Destination:</label>
+            <input type="text" id="destination" required><br>
+
+            <label>Shipping Date:</label>
+            <input type="date" id="shippingDate" required><br>
+
+            <label>Expected Delivery Date:</label>
+            <input type="date" id="expectedDeliveryDate" required><br>
+
+            <div class="buttons">
+                <button type="button" onclick="saveData()">Save</button>
+                <button type="button" onclick="updateData()">Update</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
